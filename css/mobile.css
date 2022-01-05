@@ -1,0 +1,312 @@
+@media screen and (max-width: 500px) {
+    /* Css / Buttons / Prefix */
+    .gilroy__headline1--104px {
+        font-family: gilroy, sans-serif;
+        font-size: 70px;
+        line-height: 70px;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .gilroy__headline2--64px {
+        font-family: gilroy, sans-serif;
+        font-size: 38px;
+        line-height: 45px;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .gilroy__body1--medium {
+        /* Font-size / Line-weight: 20px / 28px */
+        font-family: gilroy, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 20px;
+    }
+    .gilroy__body2--regular {
+        /* Font-size / Line-weight: 20px / 28px */
+        font-family: gilroy, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+    }
+    .gilroy__body3--medium {
+        font-family: gilroy, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 16px;
+    }
+
+/* Header */
+.header {
+    height: 80px;
+}
+.header__container nav {
+    display: none;
+}
+.header__container h4 {
+    margin-left: 2%;
+    font-size: 20px;
+    font-weight: 700;
+}
+.header__container input {
+    display: none;
+}
+.header__container--menu{
+    display: block;
+    width: 46px;
+    height: 46px;
+    background-color: #F2F2F2;
+    border-radius: 50px;
+    margin: auto 0;
+}
+.header__container--menu span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 2.7px 13px 2.7px 13px;
+    border-radius: 10px;
+}
+.header__container--menu span:nth-last-child(4){
+    margin-top: 15px;
+}
+#bag__icon--container {
+    margin: auto 0 auto auto;
+    width: 45px;
+    height: 45px;
+}
+/* Prelude */
+.prelude {
+    height: 90vh;
+}
+.prelude__container {
+    display: block;
+}
+.prelude__container--text {
+    width: 100%;
+    height: 50%;
+}
+.prelude__container--text h1 {
+    margin-top: 20px;
+    height: 150px;
+}
+.prelude__container--text p {
+    margin-top: 20px;
+}
+.prelude__container--text button {
+    margin-top: 40px;
+    width: 100%;
+    height: 60px;
+    padding-left: 10%;
+}
+.prelude__container--sneak {
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+.prelude__sneak {
+    position: relative;
+    width: 90%;
+    height: 85%;
+    background-size: cover;
+    margin: 0 auto;
+    top: 65px;
+}
+.prelude__eclipse {
+    width: 65%;
+    height: auto;
+    left: calc(50% - 32.5%);
+    margin: 0;
+    top: 62vh;
+}
+/* Demo */
+.demo {
+    margin-top: 150px;
+    height: 700px;
+}
+.demo__container button {
+    width: 95%;
+    height: 60px;
+    padding-left: 10%;
+    margin: 50px auto auto auto;
+}
+.demo__container img {
+    width: 90%;
+}
+/* Primary */
+.main__primary {
+    height: 650px;
+    margin-top: 150px;
+}
+.primary__container {
+    width: 95%;
+    display: initial;
+}
+.primary__container div {
+    width: 100%;
+}
+.primary__container--text h2 {
+    height: 60px;
+}
+.primary__container--text p {
+    width: 100%;
+    margin-top: 20px;
+}
+.primary__container--sneak {
+    width: 100%;
+    margin-top: 10px;
+}
+/* Secundary */
+.main__secundary {
+    height: 600px;
+}
+.secundary__container {
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+}
+.secundary__container div {
+    width: 100%;
+}
+.secundary__container--text {
+    width: 45%;
+}
+.secundary__container--sneak {
+    width: 65%;
+}
+.secundary__container--text h2 {
+    margin: 0;
+    height: 70px;
+}
+.secundary__container--text p {
+    margin: 0;
+}
+/* Tercenary */
+.main__tercenary {
+    height: 650px;
+    margin-top: 150px;
+}
+.tercenary__container {
+    width: 95%;
+    display: initial;
+}
+.tercenary__container div {
+    width: 100%;
+}
+.tercenary__container--text h2 {
+    height: 100px;
+    line-height: 45px;
+}
+.tercenary__container--text p {
+    width: 100%;
+    margin-top: 20px;
+}
+.tercenary__container--sneak {
+    width: 100%;
+    margin-top: 10px;
+}
+/* Aside */
+.aside {
+    height: 180px;
+    padding-top: 20px;
+    margin-top: 100px;
+}
+.aside span{
+    font-size: 40px;
+    line-height: 40px;
+}
+.aside img {
+    width: 20px;
+    height: 20px;
+}
+/* contact */
+.contact {
+    height: 900px;
+}
+.contact__container--map {
+    width: 100%;
+    height: 30%;
+}
+.contact__container--map img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    margin-left: 0;
+}
+.contact__container {
+    display: initial;
+    width: 90%;
+    padding-top: 100px;
+}
+.contact__container--sessions {
+    width: 100%;
+    height: 55%;
+}
+.contact__container--sessions h2 {
+    position: absolute;
+    margin-top: -345px;
+    margin-left: 0;
+    font-size: 30px;
+}
+.contact__container--sessions input {
+    width: 95%;
+    height: 60px;
+}
+.contact__container--sessions textarea {
+    width: 95%;
+    height: 130px;
+}
+.contact__container--sessions button {
+    width: 100%;
+    height: 60px;
+}
+/* footer */
+.footer {
+    height: 780px;
+}
+.footer__container {
+    display: flex;
+    flex-direction: column;
+}
+.footer__container h4 {
+    width: 90%;
+    text-align: center;
+    display: block;
+    margin: 0;
+    position: absolute;
+}
+.footer__container--feedback {
+    padding-left: 0;
+    font-weight: 700;
+}
+.footer__container ul {
+    text-align: center;
+    width: 95%;
+    margin: 50px auto auto 0;
+}
+.footer__container--socials {
+    width: 95%;
+    margin-top: 50px;
+    display: initial;
+}
+.footer__container--socials ul {
+    width: 30%;
+    margin: 30px 25% auto 35%;
+    align-items: center;
+}
+.footer__container--socials ul li {
+    margin: 0 auto;
+}
+.footer__container--socials h3 {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+}
+/* Mentorama */
+.mentorama {
+    margin-top: 450px
+}
+.mentorama img {
+    width: 150px;
+    height: 15px;
+}
+}
