@@ -64,6 +64,7 @@ img {
 .button__addbag--default:focus {
     background-color: #D2D2D2;
     transition: ease-in-out 1s;
+    border: none;
 }
 /* Css / Gradient / Colors */
 .webkit__colors {
@@ -204,6 +205,11 @@ img {
     margin: 0;
     width: 37%;
     background-size: cover;
+    transition: ease-in-out 1s;
+}
+.prelude__eclipse:hover {
+    left: 45%;
+    transition: ease-in-out 1s;
 }
 .prelude__sneak{
     position: absolute;
