@@ -1,171 +1,80 @@
-<!-- Html / Settings -->
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="PT-BR">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Links -->
-    <link rel="stylesheet" href="./css/desktop.css">
-    <link rel="stylesheet" href="./css/tablet.css">
-    <link rel="stylesheet" href="./css/mobile.css">
-    <link href="//db.onlinewebfonts.com/c/00d5a78493aed4b11e2584ad7cceee49?family=Gilroy+ExtraBold" rel="stylesheet" type="text/css">
-    <title>Sneak Ultra Light</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variedades de Produtos | Coffee</title>
+    <link rel="stylesheet" href="./dist/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- Header / Navegation -->
 <header class="header">
     <div class="header__container">
-        <div class="header__container--menu">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-          <h4 class="gilroy__body1--medium">SNEAK.</h4>
-        <nav class="header__container--nav gilroy__body1--medium">
-            <h5>Masculino</h5>
-            <h5>Feminino</h5>
-            <h5>Novidades</h5>
-            <h5>Ofertas</h5>
-            <h5>Coleções</h5>
+        <h2 class="header__title">Variedades de Cafés</h2>
+        <nav class="header__nav">
+            <h4>Café Arábico</h4>
+            <h4>Café Geisha</h4>
+            <h4>Café Kona</h4>
+            <h4>Café Mocha</h4>
         </nav>
-          <input type="search" placeholder="Procurar" class="ground__gray--default inputs__text gilroy__body1--medium button__addbag--hover:hover">
-          <div id="bag__icon--container" class="ground__gray--default button__addbag--hover:hover">
-            <img src="./img/bag icon.svg" alt="Sacola de compras Ultra">
-          </div>
+        <button>Continuar Compra ></button>
     </div>
 </header>
-<!-- Prelude / Button -->
-<main>
-<section class="prelude">
-    <div class="prelude__container">
-        <div class="prelude__container--text">
-            <h1 class="gilroy__headline1--104px gradient__tittle--color">SNEAK. <br> Ultra Light</h1>
-            <p class="gilroy__body1--medium">Os tênis SNEAK foram criados especificamente para treinos de circuito,
-            seja para aulas fitness em casa ou para sua própria rotina de treinos. </p>
-            <button class="button__addbag--default gilroy__body1--medium">Adicionar ao Carrinho</button>
-        </div>
-        <div class="prelude__container--sneak">
-            <img src="./img/sneak ultra light.png" alt="Sneak Ultra Light" class="prelude__sneak">
-            <img src="./img/eclipse.png" alt="" class="prelude__eclipse">
-        </div>
+<main class="products">
+<section class="products__container">
+    <div class="product">
+        <h2>RUANDA UMARAGE NAT</h2>
+        <img src="./img/card.svg" alt="Pacote de Café">
+        <p>40 R$<span>60 R$</span></p>
+        <button>+ Adicionar ao Carrinho</button>
     </div>
-</section>
-<!-- Demonstration -->
-<section class="demo">
-    <div class="demo__container ground__gray--default">
-        <h2 class="gilroy__headline2--64px ">CORRIDA - MASCULINO</h2>
-        <div class="demo__container--colors">
-            <span id="gradient__white"></span>
-            <span id="gradient__golden"></span>
-            <span id="gradient__grey"></span>
-            <span id="gradient__graphite"></span>
-        </div>
-        <img src="./img/sneak lateral.png" alt="Sneak Ultra Light">
-        <span class="demo__container--span gilroy__body1--medium">Branco</span>
-        <button class="button__addbag--default gilroy__body1--medium">Adicionar ao Carrinho</button>
+    <div class="product">
+        <h2>RUANDA UMARAGE NAT</h2>
+        <img src="./img/card.svg" alt="Pacote de Café">
+        <p>40 R$<span>60 R$</span></p>
+        <button>+ Adicionar ao Carrinho</button>
     </div>
-</section>
-<!-- Main / Primary -->
-<section class="main__primary">
-    <div class="primary__container">
-        <div class="primary__container--text">
-            <h2 class="gilroy__headline2--64px gradient__tittle--color">Leveza e agilidade</h2>
-            <p class="gilroy__body1--medium">A construção ligeira de espuma e malha do SNEAK proporcionam conforto e agilidade durante
-            o exercício. Um ((burpee break)) na parte frontal do pé torna-o extremamente flexível para fazer
-            prancha ou Mountain Climber.</p>
-        </div>
-        <div class="primary__container--sneak">
-            <img src="./img/agility.jpg" alt="Solaado Sneak Ultra light">
-        </div>
+    <div class="product">
+        <h2>RUANDA UMARAGE NAT</h2>
+        <img src="./img/card.svg" alt="Pacote de Café">
+        <p>40 R$<span>60 R$</span></p>
+        <button>+ Adicionar ao Carrinho</button>
     </div>
-</section>
-<!-- Main / Secundary -->
-<section class="main__secundary">
-    <div class="secundary__container">
-        <div class="secundary__container--sneak">
-            <img src="./img/sneak run.jpg" alt="">
-            <img src="./img/sneak demonstration.jpg" alt="">
-        </div>
-        <div class="secundary__container--text">
-            <h2 class="gilroy__headline2--64px gradient__tittle--color">Amortecimento imediato</h2>
-            <p class="gilroy__body2--regular">A espuma grossa sob o pé absorve o impacto e retorna a energia ao correr com os joelhos alto
-            e ao saltar. O suporte de arco da parte média do pé garante conforto durante todo o treino.</p>
-        </div>
+    <div class="product">
+        <h2>RUANDA UMARAGE NAT</h2>
+        <img src="./img/card.svg" alt="Pacote de Café">
+        <p>40 R$<span>60 R$</span></p>
+        <button>+ Adicionar ao Carrinho</button>
     </div>
-</section>
-<!-- Main / Tercenary -->
-<section class="main__tercenary">
-    <div class="tercenary__container">
-        <div class="tercenary__container--text">
-            <h2 class="gilroy__headline2--64px gradient__tittle--color">Sensação de estabilização</h2>
-            <p class="gilroy__body2--regular">O outrigger - a proteção lateral - dá estabilidade ao pé ao fazer movimentos laterais, como
-            por exemplo, o Skater Squat.</p>
-        </div>
-        <div class="tercenary__container--sneak">
-            <img src="./img/estabilization.jpg" alt="Sneak Ultra light exercício">
-        </div>
+    <div class="product">
+        <h2>RUANDA UMARAGE NAT</h2>
+        <img src="./img/card.svg" alt="Pacote de Café">
+        <p>40 R$<span>60 R$</span></p>
+        <button>+ Adicionar ao Carrinho</button>
     </div>
-</section>
-<!-- Aside -->
-<aside class="aside">
-    <span class="gilroy__headline1--104px"> <img src="./img/arrow aside.svg" alt=""> CORRA <br> COMO SE O MUNDO <br> DEPENDESSE DE VOCÊ</span>
-</aside>
-<!--  Contact / Forms -->
-<section class="contact">
-    <div class="contact__container">
-        <div class="contact__container--map">
-            <img src="./img/map.jpg" alt="Mapa da nossa loja física">
-        </div>
-        <div class="contact__container--sessions">
-            <h2 class="gilroy__headline2--64px">Entre em contato</h2>
-            <form action="" class="">
-                <input type="text" placeholder="Nome" class="gilroy__body2--regular input__default">
-                <input type="email" placeholder="Email" class="gilroy__body2--regular input__default">
-                <textarea name="comentaries" id="" cols="30" rows="10" placeholder="Comentários" class="gilroy__body2--regular"></textarea>
-                <label for="">
-                <input type="checkbox" id="form__input--checkbox" class="gilroy__body2--regular input__default">
-                <span class="gilroy__body2--regular">Concordo com a política de privacidade</span>
-                </label>
-                <button class="gilroy__body2--medium">Enviar</button>
-            </form>
-        </div>
+    <div class="product">
+        <h2>RUANDA UMARAGE NAT</h2>
+        <img src="./img/card.svg" alt="Pacote de Café">
+        <p>40 R$<span>60 R$</span></p>
+        <button>+ Adicionar ao Carrinho</button>
     </div>
 </section>
 </main>
-<!-- Footer -->
 <footer class="footer">
     <section class="footer__container">
-         <h4 class="gilroy__body1--medium">SNEAK.</h4>
-        <ul class="footer__container--about">
-            <li class="gilroy__body3--medium">SOBRE SNEAK</li>
-            <li class="gilroy__body2--regular ul__space--li">Novidades</li>
-            <li class="gilroy__body2--regular ul__space--li">Carreira</li>
-            <li class="gilroy__body2--regular ul__space--li">Para investidores</li>
-            <li class="gilroy__body2--regular ul__space--li">Cuidado com o meio ambiente</li>
-        </ul>
-        <ul class="footer__container--feedback">
-            <li class="gilroy__body3--medium">AJUDA</li>
-            <li class="gilroy__body2--regular ul__space--li">Status do pedido</li>
-            <li class="gilroy__body2--regular ul__space--li">Entregas e frete</li>
-            <li class="gilroy__body2--regular ul__space--li">Trocas e devoluções</li>
-            <li class="gilroy__body2--regular ul__space--li">Opções de pagamento</li>
-        </ul>
-        <div class="footer__container--socials">
-            <h3 class="gilroy__body3--medium">REDES SOCIAIS</h3>
-            <ul class="footer__container--ul">
-                <li class="gilroy__body2--regular"><a href="#" target="blank"><img src="./img/instagram.svg" alt="Instagram Social"></a></li>
-                <li class="gilroy__body2--regular"><a href="#" target="blank"><img src="./img/twitter.svg" alt="Twitter Social"></a></li>
-                <li class="gilroy__body2--regular"><a href="#" target="blank"><img src="./img/facebook.svg" alt="Facebook Social"></a></li>
-            </ul>
+            <span>Termos de desenvolvimento Mentorama™</span>
+            <button>Explore mais Variedades</button>
+        <div class="footer__socials">
+            <div class="footer__socials--container">
+                <a href="#" target="blank"><img src="./img/Facebook.svg" alt="Facebook"></a>
+                <a href="#" target="blank"><img src="./img/Instagram.svg" alt="Instagram"></a>
+                <a href="#" target="blank"><img src="./img/Twitter.svg" alt="Twittch"></a>
+            </div>
         </div>
     </section>
-<!-- Mentorama -->
-<section class="mentorama">
-    <span class="gilroy__body1--medium">DESIGNED BY <img src="./img/mentorama.svg" alt="Mentorama."></span>
-</section>
 </footer>
-<!-- Script -->
-<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
