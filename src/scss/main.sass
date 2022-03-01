@@ -1,124 +1,786 @@
-@import "./colors"
+@import "./comp"
+@import "./type"
 /* Sass / Css / Stylemain / 1600px */
+a
+    text-decoration: none
+    list-style: none
+    color: black
 html
-    font-size: 20px
-
+    background-size: cover
+    background-repeat: no-repeat
 body
     margin: 0
     padding: 0
     border: 0
-    background-color: #FFFFFF
-    img
-        background-size: cover
-/* Header / Navegation / Search / Bag */
-header
+.header
     display: flex
     width: 100%
-    height: 70px
-    margin: 10px 0 0 0
+    height: 80px
     div
         display: flex
         width: 90%
         height: 100%
         margin: 0 auto
-        div:nth-child(1)
-            display: none
-        h4
-            width: 5%
-            margin: auto 0 auto 0
+        h2
+            width: 18%
+            margin: auto 0
             font-weight: 700
-            @extend %gilroy__medium--20px28
+            @extend %lettertiny__monserrat--20
         nav
             display: flex
             width: 40%
-            height: 70px
-            margin: auto auto auto  28%
+            margin: auto
             a
-                height: 70px
+                margin: auto
+                &:nth-child(3)
+                    @extend %red__color
+            h4
                 margin: auto
                 cursor: pointer
-                text-decoration: none
-                h5
-                    height: 25px
-                    margin: 27px 0
-                    @extend %color__paragraph--black
-                    @extend %gilroy__medium--20px28
-        input
-            width: 18%
-            height: 70%
-            font-size: 0.7em
-            margin: auto auto auto 0
-            border-radius: 50px
-            border: none
-            padding-left: 5%
-            background-image: url('../images/search\ icon.svg')
-            background-repeat: no-repeat
-            background-position: 8% 50%
-            @extend %background__section--color
+                @extend %lettertiny__monserrat--20
+                &:hover
+                    color: rgba(247, 221, 128, 1)
+                    transition: 0.5s
         div
-            display: flex
-            width:  50px
-            height: 70%
-            margin: auto 0 auto auto
-            border-radius: 50px
-            cursor: pointer
-            @extend %background__section--color
-            &:hover
-                background-color: #D2D2D2
-                transition: 1s
+            width: 15%
+            height: auto
+            margin: 0
+            a
+                display: block
+                display: flex
+                margin: auto 0
+                width: 35px
+                height: 35px
+                border-radius: 100%
+                cursor: pointer
+                @extend %yellow__color--light
+                &:nth-child(2) 
+                    margin: auto
+                &:hover
+                    background-color: rgba(241, 108, 117, 1)
+                    transition: 1s
             img
-                width: 55%
-                height: auto
+                width: auto
+                height: 50%
                 margin: auto
-/* Prelude / Addbag */
+                &:nth-child(3)
+                    width: 60%
+                    height: auto
+/* Prelude / button */
 .prelude
-    display: flex
     width: 100%
-    height: auto
+    height: 90vh
+    display: flex
+    /* prelude container */
     div
         display: flex
         width: 90%
-        height: auto
-        margin: auto
-        div:nth-child(1)
-            display: block
-            width: 40%
-            height: auto
+        height: 100%
+        margin: 0 auto
+        /* container text */
+        div
+            display: inline-block
+            div
+                display: flex
+                width: 50%
+                height: 50px
+                margin: 14vh 0 0 0 
+                @extend %yellow__color--light
+                span
+                    margin: auto
+                    font-weight: 600
+                    @extend %subparagraphy__monserrat--24
             h1
-                height: 180px
-                font-family: gilroy, sans-serif
-                font-size: 5em
-                font-weight: 800
-                line-height: 1em
-                margin: 80px 0 0 0
-                background-image: linear-gradient(45deg, #dadada, #9f9f9f)
-                background-clip: text
-                -webkit-background-clip: text
-                -webkit-text-fill-color: transparent
-            @extend %gilroy__bold--104px
+                margin: 7vh 0 0 0
+                @extend %mega__monserrat--120
             p
-                margin-top: 40px
+                margin: 4vh 0 0 0
                 width: 75%
-            @extend %gilroy__regular--20px28
+                word-spacing: 4px
+                @extend %paragraphy__monserrat--24
+                @extend %gray__color--dark
             button
-                margin: 60px 0 0 0
-                width: 55%
-                height: 65px
-                font-weight: 600
-                @extend %gilroy__medium--20px28
-                @extend %button__addbag--style
-        div:nth-child(2)
-            width: 55%
-            img:nth-child(1)
-                width: 80%
-                height: auto
-                margin: 10% auto auto 18%
-                background-size: contain
-                filter: brightness(100%)
-                filter: contrast(100%)
-            img:nth-child(2)
+                margin: 6vh 0 0 12%
                 position: absolute
-                width: 35%
-                height: auto
-                margin: 50px 0 0 10%
-/* -------------------------------------- */
+                display: block
+                width: 150px
+                height: 150px
+                border-radius: 100%
+                border: none
+                cursor: pointer
+                font-weight: 600
+                transform: rotate(-15deg)
+                font-size: 1.1vw
+                line-height: 1.5vw
+                @extend %yellow__color--light
+                @extend %subparagraphy__monserrat--24
+                &:hover
+                    background-color: rgba(241, 108, 117, 1)
+                    transition: 1s
+            img
+                width: 60%
+                margin: 13vh 0 0 40%
+/* events section */
+.events
+    margin-top: 200px 
+    display: inline-block
+    width: 100%
+    h2
+        text-align: center
+        width: 100%
+        height: 30%
+        margin: 0 0 15vh 0
+        @extend %submega__monserrat--80
+        span
+            @extend %gray__color--dark
+.events__container
+    display: flex
+    width: 90%
+    margin: 0 auto
+.events__band
+    display: flex
+    width: 60%
+    height: 550px
+.concerto
+    background-image: url(/images/band\ image.jpg)
+    background-size: cover
+    background-repeat: no-repeat 
+    width: 95%
+    margin: 0
+    border-radius: 7px
+    span
+        display: block
+        width: 12%
+        height: 30px
+        font-size: 15px
+        background: rgba(255, 255, 255, 0.5)
+        color: white
+        margin: 25px 0 0 30px
+        border-radius: 2px
+        text-align: center
+        @extend %lettertiny__monserrat--20
+    p
+        color: white
+        font-weight: 400
+        font-size: 25px
+        margin: 270px 0 20px 30px
+        @extend %subtittle__monserrat--32
+    h4
+        margin: 0 0 0 30px
+        color: white
+        @extend %tittle__monserrat--56
+.events__party
+    width: 40%
+    div
+        width: 100%
+        height: 163px
+        margin: 0
+        border-radius: 10px
+        background-size: cover
+        background-repeat: no-repeat
+        background-image: url(/images/festival\ 1\ image.jpg)
+        color: white
+        &:nth-child(2)
+            margin: 30px 0 31px 0
+            background-image: url(/images/festival\ 2\ image.jpg)
+        &:nth-child(3)
+            background-image: url(/images/festival\ 3\ image.jpg)
+        h5
+            display: flex
+            width: 92%
+            padding: 15px 20px 0 20px
+            margin: 0
+            font-size: 25px
+            @extend %subtittle__monserrat--32
+            span
+                display: block
+                width: 20%
+                font-size: 15px
+                height: 30px
+                margin: auto 0 auto auto
+                text-align: center
+                background: rgba(255, 255, 255, 0.5)
+                border-radius: 2px
+                @extend %lettertiny__monserrat--20
+                &:hover
+                    background: rgba(31, 31, 31, 1)
+                    border: 2px solid white
+                    border-radius: 5px
+                    transition: 0.1s
+                    cursor: pointer
+        p
+            padding: 25px 0 0 20px
+            @extend %lettertiny__monserrat--20
+.events__category
+    display: flex
+    width: 100%
+    margin-top: 5.5vh
+    div
+        display: flex
+        width: 90%
+        margin: 0 auto
+        color: white
+        span
+            display: block
+            width: 48.5%
+            height: 330px
+            margin: 0 auto 0 0
+            background-image: url(/images/category\ image\ 1.jpg)
+            border-radius: 10px
+            background-size: cover
+            background-repeat: no-repeat
+            span
+                display: block
+                text-align: center
+                border-radius: 2px
+                background-image: none
+                height: 30px
+                width: 80px
+                margin: 30px 0 0 30px
+                background: rgba(255, 255, 255, 0.5)
+                @extend %lettertiny__monserrat--20
+            p
+                margin: 80px 0 0 30px
+                font-size: 28px
+                @extend %lettertiny__monserrat--20
+            h5
+                margin: 30px 0 0 30px
+                font-size: 47px
+                line-height: 50px
+                @extend %subtittle__monserrat--32
+            &:nth-child(2)
+                margin: 0 0 0 auto
+                background-image: url(/images/category\ image\ 2.jpg)
+.tickets
+    display: flex
+    width: 100%
+    margin: 15vh auto
+.tickets__container
+    display: flex
+    width: 90%
+    height: 400px
+    margin: 0 auto
+    border-radius: 8px
+    background-color: #F3F3F3
+.add__tickets
+    display: flex
+    width: 55%
+    height: 100%
+    h3
+        display: flex
+        width: 70%
+        height: 40px
+        font-size: 32px
+        margin: 20px 0 0 50px
+        @extend %subtittle__monserrat--32
+.tickets__category
+    width: 50%
+    span
+        display: block
+        margin: auto 0 auto 50px
+        font-size: 15px
+        color: #969696
+        @extend %lettertiny__monserrat--20
+        &:nth-child(2)
+            margin-top: 55px
+        &:nth-child(3)
+            margin-top: 35px
+        &:nth-child(4)
+            margin-top: 30px 
+        p
+            margin: 0
+            font-size: 22px
+            color: black
+            @extend %subparagraphy__monserrat--24
+.minus
+    width: 30px
+    height: 30px
+    margin: auto 10px auto auto
+    cursor: pointer
+.plus
+    width: 30px
+    height: 30px
+    margin: auto auto auto 10px
+    cursor: pointer
+.tickets__add
+    width: 50%
+    h4
+        width: 40%
+        height: 30px
+        text-align: right
+        margin: 27px auto auto auto
+        font-weight: 500
+        @extend %paragraphy__monserrat--24
+    span
+        width: 50%
+        margin: 60px auto
+        display: flex
+        p
+            width: 10%
+            margin: auto
+            text-align: center
+            font-size: 25px
+            font-weight: bold
+            @extend %paragraphy__monserrat--24         
+.add__payment
+    display: flex
+    width: 45%
+    height: 100%
+    form
+        display: inline-block
+        width: 90%
+        margin: 25px auto 0 auto
+        input
+            width: 91%
+            margin: 10px auto
+            @extend %input
+            &:nth-child(1)
+                margin-top: 0
+            &:nth-child(2)
+                width: 40.5%
+                &:hover
+                    width: 45.5%
+            &:nth-child(3)
+                width: 40.5%
+                margin-left: 4%
+                &:hover
+                    width: 45.5%
+        button
+            margin-top: 10px
+            @extend %button
+footer
+    display: flex
+    width: 100%
+    height: 40px
+    background-color: #F3F3F3
+    span
+        display: flex
+        margin: auto
+        font-size: 15px
+        @extend %lettertiny__monserrat--20
+        img
+            width: 50%
+            height: 15px
+            margin: 5px auto auto 10px
+            background-size: contain
+/* Import main sass tablet / size: 1000px max */
+@media screen and (max-width: 1000px)
+    .header
+        height: 120px
+        div
+            width: 100%
+            height: 40px
+            display: flex
+            h2
+                font-size: 18px
+                position: absolute
+                width: 100%
+                height: 30px
+                margin: 20px 0
+                text-align: center
+            div
+                display: flex
+                width: 20%
+                height: 40px
+                margin: 75px 20px 0 auto
+            nav
+                width: 80%
+                height: 40px
+                margin: 75px 0 0 0
+                a
+                    margin: auto 15px
+                    h4
+                        font-size: 19px
+    .prelude
+        height: 70vh
+        div
+            width: 100%
+            padding: 0 0 0 20px
+            div
+                width: 60%
+                padding: 0
+                &:nth-child(2)
+                    width: 40%
+                    button
+                        font-size: 18px
+                        line-height: 20px
+                        text-align: center
+                        width: 130px
+                        height: 130px
+                        margin: 220px 0 0 0
+                    img
+                        width: 90%
+                        height: 400px
+                        margin: 260px 0 0 10%
+                        background-size: cover
+                div
+                    margin-top: 70px
+                    width: 100%
+                    height: 80px
+                    span
+                        font-size: 28px
+                h1
+                    margin-top: 80px
+                    line-height: 100px
+                    font-size: 100px
+                p
+                    width: 75%
+                    font-weight: 600
+                    font-size: 20px
+    .events
+        width: 95%
+        margin-top: 50px
+        padding: 0 0 0 20px
+        margin: 0
+        h2
+            width: 100%
+            font-size: 80px
+            margin: 40px 0 60px 0
+    .events__container
+        width: 100%
+        display: inline-block
+    .events__band
+        width: 100%
+        height: 350px
+        margin-bottom: 37px
+        div
+            width: 100%
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+            background: url(/images/band\ 2.jpg)
+            height: 100%
+            background-size: cover
+            margin: 0 auto 0 0
+            span
+                width: 15%
+                height: 28px
+                font-size: 21px
+                text-align: center
+                padding: 8px
+                margin: 42px 0 0 77%
+            p
+                margin: 35px 0 20px 30px
+                font-size: 30px
+            h4
+                font-size: 60px
+                line-height: 65px
+    .events__party
+        margin-top: 50px 0 0 0
+        width: 100%
+        height: auto
+        div
+            width: 100%
+            display: inline-block
+            width: 47.2%
+            height: 180px
+            h5
+                font-size: 30px
+                padding-right: 30px 
+                width: 80%
+                span
+                    font-size: 20px
+                    width: 40%
+                    height: 30px
+                    padding: 6px
+                    margin: auto 0 auto 25%
+            p
+                font-size: 20px
+                margin-top: 40px
+            &:nth-child(2)
+                margin: 0 0 0 5%
+            &:nth-child(3)
+                width: 100%
+                margin-top: 37px
+                h5
+                    margin-top: 10px
+                    width: 62%
+                    span
+                        margin-left: 100%
+    .events__category
+        margin-top: 37px
+        width: 100%
+        div
+            width: 95% 
+            span
+                width: 47.5%
+                height: 500px
+                background-size: cover
+                background-position-x: 60% 
+                span
+                    font-size: 20px
+                    padding: 5px
+                p
+                    font-size: 30px
+                    margin-top: 40%
+                h5
+                    margin-top: 5%
+                    font-size: 60px
+                    line-height: 70px
+    .tickets
+        width: 100%
+    .tickets__container
+        display: inline-block
+        width: 100%
+        height: 1000px
+        padding: 4%
+        border-radius: 0
+    .add__tickets
+        width: 100%
+        margin: 0 auto
+        height: 500px
+        h3
+            font-size: 50px
+            margin-left: 0
+    .tickets__category
+        height: 500px
+        span
+            font-size: 20px
+            margin-left: 0
+            &:nth-child(2)
+                margin-top: 80px
+            &:nth-child(3)
+                margin-top: 55px
+            &:nth-child(4)
+                margin-top: 55px 
+            p
+                font-size: 30px
+    .tickets__add
+        height: 500px
+        h4
+            width: 100%
+            font-size: 27px
+        span
+            width: 70%
+            margin: 80px 0 0 37%
+            p
+                font-size: 40px
+            img
+                width: 45px
+                height: 45px
+    .add__payment
+        width: 100%
+        height: 500px
+        margin: 50px auto
+        form
+            width: 100%
+            height: 300px
+            input
+                font-size: 25px
+                width: 95%
+                height: 85px
+                margin: 15px auto
+                &:nth-child(3)
+                    width: 44.5%
+                    margin-left: 4%
+            button
+                font-size: 25px
+                width: 100%
+                height: 85px
+/* Import main sass mobile / size: 400px max */
+@media screen and (max-width: 400px)
+    .header
+        height: 60px
+        div
+            width: 95%
+            height: 60px
+            display: flex
+            h2
+                width: 83%
+                font-size: 16px
+                text-align: left
+                position: relative
+            nav
+                display: none
+            div
+                display: none
+            span
+                margin: auto 0
+                display: flex
+                flex-flow: column
+                width: 25px
+                height: 25px
+                span
+                    background-color: black
+                    width: 100%
+                    height: 4px
+                    margin: auto 0 auto 100%
+                    border-radius: 1px
+    .prelude
+        height: 1000px
+        div
+            width: 95%
+            margin: 0 auto
+            display: flex
+            flex-flow: column
+            padding: 0
+            div
+                width: 100%
+                height: 600px
+                margin: 0
+                &:nth-child(2)
+                    width: 80%
+                    height: 350px
+                    margin: 0 5% auto 15%
+                    img
+                        width: 100%
+                        height: 100%
+                        margin: 0
+                    button
+                        width: 130px
+                        height: 130px
+                        margin: -40px auto auto -40px
+                        font-size: 17px
+                div
+                    margin-top: 30px 
+                    width: 100%
+                    height: 60px
+                    span
+                        font-size: 16px
+                h1
+                    margin-top: 50px
+                    font-size: 70px
+                    line-height: 80px
+                p
+                    width: 100%
+                    font-size: 16px
+                    
+    .events
+        width: 100%
+        padding: 0
+        h2
+            width: 100%
+            margin: 0
+            font-size: 50px
+        div
+            width: 95%
+            margin: 0 2.5%
+            div
+                width: 100%
+                margin: 0 0 12.5px 0
+                &:nth-child(2)
+                    display: flex
+                    flex-flow: column
+                    div
+                        width: 100%
+                        height: 150px
+                        margin: 12.5px 0
+                        h5
+                            width: 100%
+                            margin: 70px 0 0 0 
+                            font-size: 25px
+                            span
+                                width: 27%
+                                margin: -60px 0 0 60px
+                                font-size: 16px
+                        p
+                            margin: -120px 0 0 0
+                            font-size: 17px
+
+                div
+                    width: 100%
+                    height: 350px
+                    background-position-x: -130px
+                    span
+                        width: 30%
+                        height: 25px
+                        margin: 20px auto 0 10%
+                        font-size: 17px
+                    p
+                        margin-top: 110px
+                        font-size: 16px
+                    h4
+                        font-size: 35px
+                        line-height: 40px
+    .events__category
+        margin: 0
+        div
+            display: flex
+            flex-flow: column
+            width: 95%
+            margin: 0 auto
+            span
+                width: 100%
+                height: 400px
+                &:nth-child(2)
+                    margin-top: 25px
+                span
+                    width: 30%
+                    font-size: 16px
+                p
+                    margin-top: 170px
+                    font-size: 16px
+                h5
+                    font-size: 30px
+                    line-height: 40px
+    .tickets__container
+        height: 950px
+    .add__tickets
+        height: 410px
+    .tickets__category
+        height: 400px
+        display: flex
+        flex-flow: column
+        h3
+            font-size: 35px
+        span
+            margin: 0 auto
+            font-size: 15px
+            &:nth-child(2)
+                margin-top: 62px
+            &:nth-child(3)
+                margin-top: 20px
+            &:nth-child(4)
+                margin: 20px 0 0 0
+            p
+                font-size: 25px
+    .tickets__add
+        height: 400px
+        display: flex
+        flex-flow: column
+        h4
+            margin-bottom: 30px
+            font-size: 20px
+        span
+            width: 70%
+            height: 30px
+            margin: 40px 10% 40px 30%
+            img
+                width: 30%
+                height: 30px
+                margin: 0
+            p
+                display: block
+                width: 40%
+                height: 25px
+                margin-top: -2px
+                font-size: 25px
+                text-align: center
+    .add__payment
+        width: 100%
+        display: flex
+        height: 500px
+        form
+            display: flex
+            flex-flow: column
+            width: 100%
+            height: 470px
+            margin: 0
+            input
+                display: block
+                padding: 0
+                margin: 20px 0
+                width: calc( 100% - 20px )
+                font-size: 15px
+                height: 60px
+                padding-left: 20px
+                &:nth-child(2)
+                    width: calc( 100% - 20px )
+                    &:hover
+                        width: 100%
+                &:nth-child(3)
+                    width: calc( 100% - 20px )
+                    margin: 20px 0
+                    &:hover
+                        width: 100%
+            button
+                font-size: 20px
+                height: 60px

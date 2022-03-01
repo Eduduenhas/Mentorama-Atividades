@@ -5,12 +5,20 @@ const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const image = require('gulp-image');
 const browserSync = require('browser-sync').create();
+const htmlmin = require('gulp-htmlmin');
 
 const scssDir = './src/scss/*.sass'
 const mainScss = './src/scss/main.sass'
 const imagesDir = './src/images/*'
 
-const initialTasks = ['sass', 'images']
+const initialTasks = ['sass', 'images', 'html-minify']
+
+// HTML TASKS
+gulp.task('html-minify', () => {
+  return gulp.src('./src/index.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('./public'));
+});
 
 // IMAGE TASKS
 gulp.task('images', () =>
